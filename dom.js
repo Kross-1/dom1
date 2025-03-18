@@ -53,10 +53,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+            grid-template-rows: repeat(2, auto); /* 2 строки */
             gap: 20px;
             padding: 20px;
             justify-items: center;
+            max-width: 900px; /* Ограничиваем ширину контейнера */
+            margin: 0 auto; /* Центрируем контейнер */
         }
         .cat-card {
             width: 250px;
